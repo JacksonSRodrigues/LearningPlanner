@@ -1,0 +1,5 @@
+# dont track node_modules
+/node_modules
+
+# dont track build
+/build
