@@ -4,7 +4,7 @@ We only have limited memory, hence brain discards or remove memory which are not
 
 ## Inspiration
 
-<hr/>
+<br>
 
 ### Optimal Interval: for i<sup>th</sup> repetition.
 
@@ -12,12 +12,12 @@ I<sub>i</sub> = I<sub>1</sub>.C<sub>2</sub><sup>(i-1)</sup>
 
 where:
 
-> **I<sub>1</sub>** is the first interval.  
-> **C<sub>2</sub>** is a increment constant.  
-> **I<sub>i</sub>** is the interval after i<sup>th</sup> iteration.
+> **_I<sub>1</sub>_** : is the first interval.  
+> **_C<sub>2</sub>_** : is a increment constant.  
+> **_I<sub>i</sub>_** : is the interval after i<sup>th</sup> iteration.
 
 <br/>
-<hr/>
+<br/>
 
 ### Stability: after i<sup>th</sup> repetition
 
@@ -25,19 +25,22 @@ S<sub>i</sub> = -(s<sub>i</sub>)/ln(K)
 
 where:
 
-> **s<sub>i</sub>** is the optimal Interval for i<sup>th</sup> revision where _Retention Rate_ is still **X%** (say 95%)  
-> **r<sub>i</sub>** is the elapsed time after last revision.  
-> **K** is the constant factor indicating percentage _(say 0.95 for 95%)_
+> **_s<sub>i</sub>_** : is the optimal Interval for i<sup>th</sup> revision where _Retention Rate_ is still **X%** (say 95%)  
+> **_r<sub>i</sub>_** : is the elapsed time after last revision.  
+> **_K_** : is the constant factor indicating percentage _(say 0.95 for 95%)_
 
 <br/>
 
 > _Note: r is less than s on optimal condition(when the Retention Rate is >=X%, say 95%)_
 
-<hr/>
+<br/>
+<br/>
 
 ### Retrieval rate: at time (t) after i<sup>th</sup> repetition
 
 R<sub>i</sub>(t) = e<sup>-t/S<sup>
 
-> R<sub>i</sub>(t) is the Retention Rate after i<sup>th</sup> revision.  
-> t is the time elapsed after i<sup>th</sup> revision
+where:
+
+> **_R<sub>i</sub>(t)_** : is the Retention Rate after i<sup>th</sup> revision.  
+> **_t_** : is the time elapsed after i<sup>th</sup> revision
