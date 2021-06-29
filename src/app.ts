@@ -1,6 +1,9 @@
+import express from 'express'
 
-function greet(name: string) {
-    console.log(`Hello ${name}!`)
-}
+const PORT = process.env.PORT || 3000
+const app = express()
+app.listen(PORT)
 
-greet('Jackson Sunny')
+app.use('/', (req, res, next) => {
+    res.send(`<h1> Hello Jackson</h1>`)
+})
